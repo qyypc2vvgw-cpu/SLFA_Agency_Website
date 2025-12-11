@@ -1,0 +1,378 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #14ec9d, #50b7f3 50%, #336cfc);
+    color: #003366;
+    min-height: 100vh;
+    line-height: 1.6;
+}
+
+
+.header {
+    background: #003366;
+    padding: 20px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.header .logo {
+    font-size: 22px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.header .flag {
+    border-radius: 5px;
+}
+
+.navigation a,
+.header nav a {
+    color: white;
+    margin-left: 18px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.navigation a:hover,
+.header nav a:hover,
+.header nav .active {
+    color: #76fe9f;
+}
+
+
+.hero-section {
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    background: white;
+    width: 100%;
+    max-width: 760px;
+    border-radius: 20px;
+    padding: 35px;
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+
+.hero-img {
+    width: 100%;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    height: auto;
+}
+
+
+.section-title {
+    font-size: 34px;
+    color: #003366;
+    margin-bottom: 10px;
+}
+
+.tagline {
+    font-size: 18px;
+    color: #007A4D;
+    margin-bottom: 25px;
+}
+
+
+.price-display {
+    background: #E6F7EF;
+    padding: 15px;
+    border-radius: 12px;
+    margin: 20px auto;
+    width: 60%;
+}
+
+.price-display .amount {
+    font-size: 32px;
+    font-weight: bold;
+    color: #007A4D;
+}
+
+.price-display .period {
+    display: block;
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+
+.benefits {
+    background: #f0f8ff;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: left;
+    margin: 25px 0;
+}
+
+.benefits-heading {
+    font-size: 24px;
+    margin-bottom: 12px;
+}
+
+.benefits-list {
+    list-style: none;
+}
+
+.benefits-list li {
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 18px;
+}
+
+.benefits-list i {
+    color: #007A4D;
+    font-size: 22px;
+}
+
+.create-account {
+    margin: 30px 0;
+    background: #E6F7EF;
+    padding: 25px;
+    border-radius: 15px;
+}
+
+.create-account h3 {
+    font-size: 26px;
+    color: #003366;
+    margin-bottom: 10px;
+}
+
+.account-features {
+    list-style: none;
+    text-align: left;
+    margin: 15px 0;
+}
+
+.account-features li {
+    padding: 10px 0;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.account-features i {
+    font-size: 20px;
+    color: #007A4D;
+}
+
+.account-btn {
+    display: inline-block;
+    padding: 12px 25px;
+    margin-top: 15px;
+    background: #003366;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 12px;
+}
+
+.account-btn:hover {
+    background: #007A4D;
+}
+
+
+.join-options {
+    margin: 30px 0;
+}
+
+.big-btn {
+    display: inline-block;
+    padding: 15px 30px;
+    background: #007A4D;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 12px;
+    margin: 10px 0;
+}
+
+.whatsapp {
+    background: #25D366;
+}
+
+.call {
+    background: #003366;
+}
+
+.big-btn:hover {
+    opacity: 0.9;
+}
+
+.separator {
+    margin: 15px 0;
+    font-weight: bold;
+}
+
+
+.important-info {
+    margin-top: 35px;
+    background: #f0f8ff;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: left;
+}
+
+.important-info h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.info-list {
+    list-style: none;
+}
+
+.info-list li {
+    padding: 8px 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.info-list i {
+    font-size: 18px;
+    color: #007A4D;
+}
+
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 20px;
+    margin: 25px 0;
+}
+
+.box {
+    background: #E6F7EF;
+    padding: 20px;
+    border-radius: 15px;
+    text-decoration: none;
+    color: #003366;
+}
+
+.box:hover {
+    background: #d6f5e5;
+}
+
+.box h3 {
+    margin: 10px 0;
+}
+
+.box p {
+    font-size: 15px;
+}
+
+.box i {
+    color: #007A4D;
+}
+
+
+.contact-form-section {
+    margin-top: 35px;
+}
+
+.contact-form-section h3 {
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+
+.contact-form {
+    text-align: left;
+    margin-top: 15px;
+}
+
+.contact-form label {
+    font-weight: bold;
+    margin-top: 10px;
+    display: block;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 10px;
+    border: 1px solid #bbb;
+    font-size: 16px;
+}
+
+textarea {
+    height: 120px;
+}
+
+.submit-btn {
+    background: #003366;
+    padding: 15px 25px;
+    border-radius: 10px;
+    color: white;
+}
+
+.submit-btn:hover {
+    background: #007A4D;
+}
+
+
+.business-contact {
+    margin-top: 40px;
+    text-align: left;
+}
+
+.business-info {
+    list-style: none;
+    margin-top: 10px;
+}
+
+.business-info li {
+    padding: 8px 0;
+    font-size: 17px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.business-info i {
+    color: #003366;
+}
+
+
+.social-big {
+    margin-top: 25px;
+}
+
+.social-big a {
+    font-size: 28px;
+    margin: 0 12px;
+    color: #003366;
+}
+
+.social-big a:hover {
+    color: #007A4D;
+}
+
+
+
+.footer {
+    background: #003366;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    font-size: 14px;
+}
